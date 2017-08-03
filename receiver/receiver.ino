@@ -28,7 +28,6 @@ void loop() {
    
   if(mySerial.available() > 1){//Read from HC-12 and send to serial monitor
     String input = mySerial.readString();
-    //Serial.println(input);
 lcd.clear();
 lcd.setCursor(0,0);
 lcd.print("LoRa data:");
