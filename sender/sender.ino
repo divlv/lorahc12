@@ -6,7 +6,7 @@ int r = 0;
 long randNumber=0;
 void setup() {
   Serial.begin(9600);
-  mySerial.begin(9600);
+  mySerial.begin(1200);// 1200 --> FU4 enabled on HC-12!
   randomSeed(analogRead(0));
 }
 
@@ -18,5 +18,5 @@ r = r+1;
 mySerial.println("LoRa "+String(r)+" - "+String(randNumber));
  
  
-  delay(2000);
+  delay(3000);
 }

@@ -10,7 +10,7 @@ SoftwareSerial mySerial(2, 3); //RX, TX
 
 void setup() {
   Serial.begin(9600);
-  mySerial.begin(9600);
+  mySerial.begin(1200); // 1200 --> FU4 enabled on HC-12!
 
   lcd.begin(16,2);   // initialize the lcd for 16 chars 2 lines, turn on backlight
   lcd.noBacklight();
